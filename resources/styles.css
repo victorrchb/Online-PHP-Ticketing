@@ -1,0 +1,418 @@
+@font-face {
+    font-family: 'keeptruck';
+    src: url(./fonts/keep-on-truckin.regular.ttf);
+}
+
+html, body {
+    max-width: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    overflow-x:hidden;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    width: 100%;
+    padding: 0 30px;
+    background-color: white;
+    position: fixed;
+    filter: drop-shadow(0 0 5px #00000022);
+}
+
+#logo {
+    order: 1;
+    justify-self: flex-start;
+    
+    height: 60px;
+    width: 130px;
+}
+
+.nav-button {
+    display: flex;
+    flex-direction: row;
+    order: 2;
+    justify-content: right;
+    column-gap: 5px;
+    width: 700px;
+    margin-right: 50px;
+}
+
+.cta {
+    border: none;
+
+    background: #7D82B8;
+    color: #FFFFFF;
+
+    font-family: "new-hero", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 28px;
+    text-decoration: none;
+
+    width: auto;
+    height: auto;
+    
+    border-radius: 7px;
+    border: 2px solid #7D82B8;
+
+    padding: 7px 7px 3px 7px;
+
+    text-align: center;
+}
+
+.cta:hover {
+    background: #FFFFFF;
+    color: #000000;
+
+    border: 2px solid #7D82B8;
+}
+
+#disconnect {
+    order: 3;
+}
+
+#sign-in {
+    order: 4;
+}
+
+#sign-up {
+    order: 5;
+}
+
+.homepage-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100%;
+
+    margin: 150px auto;
+}
+
+.homepage-content {
+    flex-direction: column;
+
+    height: 100%;
+    width: 35%;
+}
+
+#homepage-illustration {
+    min-height: 400px;
+    max-width: 500px;
+}
+
+h1 {
+    font-family: "keeptruck";
+    font-size: 64px;
+}
+
+p {
+    font-family: "new-hero", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    
+    order: 1;
+
+    min-height: 100%;
+
+    max-width: 100vw;
+}
+
+.register-content {
+    display: flex;
+    flex-direction: column;
+    align-items: space-around;
+
+    order: 1;
+}
+
+.identifier-img {
+    order: 1;
+
+    margin-bottom: 80px;
+}
+
+#register-illustration {
+    max-width: 45vw;
+    max-height: 100%;
+
+    order: 2;
+    align-self: flex-end;
+}
+
+#img-p {
+    margin: 0px;
+}
+
+.register-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    order: 2;
+
+    height: 100%;
+    width: 100%;
+
+    flex: 1;
+
+    gap: 40px;
+
+    font-family: "new-hero", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+}
+
+.label-tag {
+    display: flex;
+    flex-direction: column;
+}
+
+.label-tag>input {
+    order:2;
+}
+
+.input-tag {
+    background: #FFFFFF;
+    border: 2px solid #000000;
+    border-radius: 5px;
+
+    min-height: 50px;
+}
+
+.submit {
+    align-self: center;
+
+    min-width: 150px;
+    min-height: 50px;
+
+    background: #7D6479;
+    border-radius: 7px;
+    border: none;
+    color: #FFFFFF;
+
+    font-family: "new-hero", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+
+    padding: 7px 7px 3px 7px;
+}
+
+.submit:hover {
+    background: #FFFFFF;
+    color: #000000;
+
+    border: 2px solid #7D6479;
+}
+
+.prompt-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+
+    flex: 1;
+
+    height: 100%;
+}
+
+.table-content {
+    flex-direction: row;
+
+    height: 100%;
+    width: 100%;
+
+    font-family: "new-hero", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#ticket-name {
+    order: 1;
+    justify-self: flex-start;
+    align-self: flex-start;
+
+    font-size: 24px;
+    font-family: "keeptruck";
+}
+
+#ticket-hash {
+    font-family: "new-hero", sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+}
+
+#qr-code-img {
+    justify-self: center;
+    align-self: center;
+    order: 2;
+
+    min-height: 200px;
+    min-width: auto;
+}
+
+.details-table {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    order: 3;
+}
+
+.grid-container {
+    display: flex;
+    flex-direction: row;
+
+    margin-top: 50px;
+}
+
+.event-card {
+    display: flex;
+    flex-direction: column;
+
+    font-family: "new-hero", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+.event-create-cta {
+    height: 50px;
+    width: 50px;
+    justify-self: flex-end;
+}
+
+.ticket-create-cta {
+    height: 30px;
+    width: 30px;
+    justify-self: flex-end;
+}
+
+.event-img {
+    justify-self: center;
+    align-self: center;
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+}
+
+.event-modify {
+    max-width: 75px;
+
+    text-align: center;
+
+    margin: 5px 0px 5px 0px;
+}
+
+.detail-card {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+    gap: 10px;
+    padding: 20px 50px;
+    background-color: white;
+    border: 2px solid #00000022;
+    border-radius: 30px;
+}
+
+a, a * {
+    color: #000000;
+    text-decoration: none;
+}
+
+em {
+    color: #7D82B8;
+}
+
+.modifier-annuler {
+    margin-top: 5px;
+}
+
+#cancel {
+    font-size: 15px;
+}
+
+#p-cancel {
+    margin-top: 0;
+}
+
+#cta-a, #cta-a img {
+    margin-top: 10px;
+
+    justify-self: flex-end;
+}
+
+.center-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-self: center;
+
+    min-height: 100%;
+    max-width: 100%;
+}
+
+.center-container h1, .center-container p {
+    margin: 0px;
+
+    display: flex;
+}
+
+.dashboard-main {
+    flex-direction: column;
+}
+
+.user-table {
+    justify-self: center;
+    
+    margin-top: 10px;
+}
+
+#participants {
+    font-size: 24px;
+    font-family: "new-hero", sans-serif;;
+    
+    margin-top: 50px;
+}
+
+.create-modify-event label {
+    font-size: 24px;
+    font-family: "new-hero", sans-serif;;
+}
+
+.create-event-container {
+    align-items: center;
+    justify-content: center;
+}
+
+#event-form {
+    margin-bottom: 150px;
+}
